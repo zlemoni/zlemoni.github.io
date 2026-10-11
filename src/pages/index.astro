@@ -1,0 +1,4 @@
+---
+const posts = Object.values(import.meta.glob('../content/blog/*.md', { eager: true }));
+---
+<html lang="zh"><meta charset="utf-8"/><title>My Blog</title><body><h1>My Blog</h1>{posts.map(post => <article><a href={'/posts/' + post.frontmatter.slug + '/'}>{post.frontmatter.title}</a><p>{post.frontmatter.description}</p></article>)}</body></html>

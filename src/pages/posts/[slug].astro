@@ -1,0 +1,5 @@
+---
+export function getStaticPaths() { return Object.values(import.meta.glob('../../content/blog/*.md', { eager: true })).map(post => ({params:{slug:post.frontmatter.slug},props:{post}})); }
+const {post} = Astro.props; const Content = post.Content;
+---
+<html lang="zh"><meta charset="utf-8"/><title>{post.frontmatter.title}</title><body><a href="/">Home</a><h1>{post.frontmatter.title}</h1><Content /></body></html>

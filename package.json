@@ -1,1 +1,1 @@
-{"private":true,"hexo":{"version":"7.3.0"},"scripts":{"build":"hexo generate"},"dependencies":{"hexo":"^7.3.0","hexo-generator-index":"^4.0.0","hexo-renderer-ejs":"^2.0.0","hexo-renderer-marked":"^7.0.0"}}
+{"private":true,"type":"module","scripts":{"build":"astro build"},"dependencies":{"astro":"^5.0.0"}}
